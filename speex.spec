@@ -2,7 +2,7 @@ Summary:	A voice compression format (codec)
 Name:		speex
 Version:	1.2
 %define rc_ver	rc1
-Release:	0.17.%{rc_ver}%{?dist}
+Release:	0.19.%{rc_ver}%{?dist}
 License:	BSD
 Group:		System Environment/Libraries
 URL:		http://www.speex.org/
@@ -74,6 +74,12 @@ rm -f $RPM_BUILD_ROOT%{_docdir}/speex/manual.pdf
 %{_mandir}/man1/speexdec.1*
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 1.2-0.19.rc1
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.2-0.18.rc1
+- Mass rebuild 2013-12-27
+
 * Fri Apr 05 2013 Miroslav Lichvar <mlichvar@redhat.com> - 1.2-0.17.rc1
 - update config.guess and config.sub for aarch64 (#926562)
 - make some dependencies arch-specific
